@@ -1,0 +1,87 @@
+.container {
+  width: 450px;
+  margin: 30px auto 0;
+  border: 3px solid steelblue;
+}
+.container > header > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+  color: #fff;
+  letter-spacing: 2px;
+  background-color: steelblue;
+}
+.container > header > form {
+  display: flex;
+}
+.container > header > form > input {
+  background: none;
+  border: none;
+  outline: none;
+  letter-spacing: 1px;
+  flex: 1 1 0;
+  height: 55px;
+  font-size: 16px;
+  text-indent: 10px;
+  background-color: #e7bba9;
+}
+.container > header > form > input:hover {
+  background-color: #eee;
+}
+.container > header > form > button {
+  background: none;
+  border: none;
+  outline: none;
+  letter-spacing: 1px;
+  width: 50px;
+  font-size: 14px;
+  background-color: #fcd970;
+}
+.container > header > form > button:hover {
+  background-color: #eee;
+}
+.container > section {
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+}
+.container > section > ul {
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  right: -17px;
+  width: calc(100% + 17px);
+  height: 500px;
+}
+.container > section > ul > li {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px 15px;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.container > section > ul > li:hover {
+  background-color: #eee;
+}
+.container > section > ul > li > h2.tit {
+  flex: 1;
+  order: 20;
+  margin: 0 10px;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container > section > ul > li > h2.tit.done {
+  text-decoration: line-through;
+}
+.container > section > ul > li > input.done {
+  order: 10;
+}
+.container > section > ul > li > button.del {
+  order: 30;
+  width: 45px;
+  height: 35px;
+}/*# sourceMappingURL=App.css.map */
